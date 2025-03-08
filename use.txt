@@ -1,0 +1,1 @@
+chmod +x JQI8.sh&&chmod +xJQI8P.sh&&chmod +x JQI17.sh&&chmod +x JQI17P.sh&&chmod +xJQI21.sh&&chmod +x JQI21P.sh&&chmod +x JVC.sh
