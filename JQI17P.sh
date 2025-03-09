@@ -5,7 +5,7 @@
 
 # 定义Java版本和安装目录
 JAVA_VERSION="17.0.14_7"
-INSTALL_DIR="/usr/lib/jvm"
+INSTALL_DIR="/usr/lib/jvm/17"
 DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/linux/OpenJDK17U-jdk_x64_linux_hotspot_${JAVA_VERSION}.tar.gz"
 
 

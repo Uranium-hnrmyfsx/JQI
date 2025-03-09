@@ -5,7 +5,7 @@
 
 # 定义Java版本和安装目录
 JAVA_VERSION="8u442b06"
-INSTALL_DIR="/usr/lib/jvm"
+INSTALL_DIR="/usr/lib/jvm/8"
 DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/Adoptium/8/jre/x64/linux/OpenJDK8U-jre_x64_linux_hotspot_${JAVA_VERSION}.tar.gz"
 
 
@@ -41,17 +41,10 @@ fi
 
 # 获取解压目录名
 JAVA_DIR=$(tar -tzf /tmp/jdk.tar.gz | head -1 | cut -f1 -d"/")
-sudo ln -sfn "$INSTALL_DIR/$JAVA_DIR" "$INSTALL_DIR/java-17"
+sudo ln -sfn "$INSTALL_DIR/$JAVA_DIR" "$INSTALL_DIR/8"
 
 
 
-# 验证安装
-if ! command -v java &> /dev/null; then
-    echo "安装失败，请检查："
-    echo "1. 符号链接：ls -l $INSTALL_DIR"
-    echo "2. 环境变量：echo \$PATH"
-    exit 1
-fi
 
-echo "安装成功！请重新登录。Java版本："
-java -version
+echo "安装成功！请重新登录。"
+

@@ -5,7 +5,7 @@
 
 # 定义Java版本和安装目录
 JAVA_VERSION="_21.0.6_7"
-INSTALL_DIR="/usr/lib/jvm/"
+INSTALL_DIR="/usr/lib/jvm/21"
 DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/Adoptium/21/jdk/x64/linux/OpenJDK21U-jdk_x64_linux_hotspot.tar.gz"
 
 
@@ -45,7 +45,7 @@ sudo ln -sfn "$INSTALL_DIR/$JAVA_DIR" "$INSTALL_DIR/java-17"
 
 # 配置环境变量
 sudo cat <<EOF | sudo tee /etc/profile.d/java17.sh >/dev/null
-export JAVA_HOME="$INSTALL_DIR/java-17"
+export JAVA_HOME="$INSTALL_DIR/21"
 export PATH="\$JAVA_HOME/bin:\$PATH"
 EOF
 
